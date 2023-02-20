@@ -15,17 +15,17 @@ interface IProjects {
 
 const projects: IProjects = {
   TicTacToe: {
-    imagePath: '/TTT.png',
+    imagePath: 'alter_ego_test_app/TTT.png',
     siteLink: 'https://tic-tac-toe-topaz-gamma.vercel.app',
     repoLink: 'https://github.com/Woshipfull/Tic-Tac-Toe',
   },
   HelloChat: {
-    imagePath: '/HCh.png',
+    imagePath: 'alter_ego_test_app/HCh.png',
     siteLink: 'https://hellochat-production.up.railway.app',
     repoLink: 'https://github.com/Woshipfull/HelloChat',
   },
   CatHub: {
-    imagePath: '/CH.png',
+    imagePath: 'alter_ego_test_app/CH.png',
     siteLink: 'https://cat-hub-woshipfull.vercel.app',
     repoLink: 'https://github.com/Woshipfull/CatHub',
   },

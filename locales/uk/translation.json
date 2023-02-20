@@ -1,0 +1,47 @@
+{
+  "title": "AlterEGO Українська",
+  "navBtns": {
+    "home": "Додому",
+    "news": "Новини",
+    "profile": "Профіль"
+  },
+  "loginModal": {
+    "btnOpen": "Авторизуватись",
+    "title": "Вхід",
+    "usernameLabel": "Ваше імʼя",
+    "passwordLabel": "Пароль",
+    "validErrorMessage": "Це обовʼязкове поле",
+    "submitBtn": "Авторизуватись",
+    "submitErrorMessage": "Ім'я користувача або пароль введено неправильно"
+  },
+  "homepage": {
+    "welcome": "Ласкаво прошу!",
+    "description": "Це тестове завдання для компанії AlterEgo, створене Єгором Литвиновим.",
+    "link": "Вперед на GitHub",
+    "moreProjectsTitle": "Більше моїх освітніх проектів"
+  },
+  "projects": {
+    "TicTacToe": {
+      "title": "Хрестики-нулики",
+      "description": "Гра в хрестики-нулики, реалізована на TS, Redux і Bootstrap",
+      "imageAlt": "Гра в хрестики-нулики"
+    },
+    "HelloChat": {
+      "title": "Hello Chat",
+      "description": "Чат, реалізований на JavaScript за допомогою Socket.io, Redux і Bootstrap",
+      "imageAlt": "Hello Chat"
+    },
+    "CatHub": {
+      "title": "CatHub",
+      "description": "Розважальний сервіс для пошуку картинок кицьок. Реалізовано на TypeScript за допомогою MobX, SASS та сервісу CatAPI",
+      "imageAlt": "CatHub"
+    },
+    "showRepo": "Репозиторій"
+  },
+  "newsPage": {
+    "title": "Новини",
+    "addMore": "Завантажити ще",
+    "noMore": "Більше немає новин",
+    "loading": "Завантаження"
+  }
+}

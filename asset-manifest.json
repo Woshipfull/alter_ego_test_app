@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/alter_ego_test_app/static/js/main.815b10d1.js",
+    "main.js": "/alter_ego_test_app/static/js/main.6d5e576f.js",
     "index.html": "/alter_ego_test_app/index.html",
     "static/media/getFetch.cjs": "/alter_ego_test_app/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.815b10d1.js.map": "/alter_ego_test_app/static/js/main.815b10d1.js.map"
+    "main.6d5e576f.js.map": "/alter_ego_test_app/static/js/main.6d5e576f.js.map"
   },
   "entrypoints": [
-    "static/js/main.815b10d1.js"
+    "static/js/main.6d5e576f.js"
   ]
 }

@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { logIn } from './store/appStateSlice';
 
-function App() {
+import Header from './components/Header';
+import Homepage from './components/Homepage';
+import NewsPage from './components/NewsPage';
+import ProfilePage from './components/ProfilePage';
+
+const App = () => {
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const [currentLocation, setCurrentLocation] = useState('');
+
+  useEffect(() => {
+    if (localStorage.username) {
+      dispatch(logIn());
+    }
+  }, [dispatch]);
+
+  useEffect(() => {
+    setCurrentLocation(location.pathname);
+  }, [location.pathname]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header currentLocation={currentLocation} />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/news" element={<NewsPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;

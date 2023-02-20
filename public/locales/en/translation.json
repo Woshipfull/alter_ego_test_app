@@ -1,0 +1,47 @@
+{
+  "title": "AlterEGO English",
+  "navBtns": {
+    "home": "Home",
+    "news": "News",
+    "profile": "Profile"
+  },
+  "loginModal": {
+    "btnOpen": "Log in",
+    "title": "Log in",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "validErrorMessage": "This field is required",
+    "submitBtn": "Submit",
+    "submitErrorMessage": "Incorrect username or password"
+  },
+  "homepage": {
+    "welcome": "Welcome!",
+    "description": "This is test app for AlterEgo company made by Yehor Lytvynov",
+    "link": "Go to GitHub",
+    "moreProjectsTitle": "More my educational projects"
+  },
+  "projects": {
+    "TicTacToe": {
+      "title": "Tic-Tac-Toe",
+      "description": "Tic-tac-toe game, implemented on TS, Redux and Bootstrap",
+      "imageAlt": "Tic-tac-toe game"
+    },
+    "HelloChat": {
+      "title": "Hello Chat",
+      "description": "Chat implemented in JavaScript using Socket.io, Redux and Bootstrap",
+      "imageAlt": "Hello Chat"
+    },
+    "CatHub": {
+      "title": "CatHub",
+      "description": "An entertaining service for finding pictures of cats. Implemented on TypeScript using MobX, SASS and CatAPI service",
+      "imageAlt": "CatHub"
+    },
+    "showRepo": "Show repo"
+  },
+  "newsPage": {
+    "title": "News",
+    "addMore": "Add more",
+    "noMore": "No more news",
+    "loading": "Loading"
+  }
+}

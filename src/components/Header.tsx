@@ -102,8 +102,6 @@ const Header: React.FC<Props> = ({ currentLocation }) => {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -113,7 +111,9 @@ const Header: React.FC<Props> = ({ currentLocation }) => {
               textDecoration: 'none',
             }}
           >
-            {t('title')}
+            <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+              {t('title')}
+            </Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

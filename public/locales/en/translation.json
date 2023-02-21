@@ -43,5 +43,14 @@
     "addMore": "Add more",
     "noMore": "No more news",
     "loading": "Loading"
+  },
+  "profilePage": {
+    "title": "Profile",
+    "logoutBtn": "Log out"
+  },
+  "notFoundPage": {
+    "title": "Oops... Error 404",
+    "description": "Sorry, this page was not found",
+    "goHomeLink": "Go to homepage"
   }
 }

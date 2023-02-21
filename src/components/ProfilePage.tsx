@@ -5,10 +5,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getIsAutorised, logOut } from '../store/appStateSlice';
 
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const ProfilePage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const isAutorised = useSelector(getIsAutorised);
 
@@ -35,7 +37,7 @@ const ProfilePage = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          backgroundImage: `url(${'/profile.jpg'})`,
+          backgroundImage: `url(${'./profile.jpg'})`,
           borderRadius: 0,
         }}
       >
@@ -65,7 +67,7 @@ const ProfilePage = () => {
                   color="inherit"
                   gutterBottom
                 >
-                  Profile
+                  {t('profilePage.title')}
                 </Typography>
               </Box>
             </Grid>
@@ -73,7 +75,7 @@ const ProfilePage = () => {
         </Container>
       </Paper>
       <Container sx={{ mt: 2, display: 'flex', justifyContent: 'center' }}>
-        <Button onClick={handleLogOut}>Log out</Button>
+        <Button onClick={handleLogOut}>{t('profilePage.logoutBtn')}</Button>
       </Container>
     </>
   );

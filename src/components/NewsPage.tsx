@@ -138,7 +138,7 @@ const NewsPage = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          backgroundImage: `url(${'/news.jpg'})`,
+          backgroundImage: `url(${'./news.jpg'})`,
           borderRadius: 0,
         }}
       >

@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Homepage from './components/Homepage';
 import NewsPage from './components/NewsPage';
 import ProfilePage from './components/ProfilePage';
+import NotFoundPage from './components/NotFoundPage';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </>
   );

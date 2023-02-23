@@ -13,12 +13,11 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import SignInModal from './SignInModal';
 
-import { useSelector } from 'react-redux';
 import { getIsAutorised } from '../store/appStateSlice';
-
-import { useTranslation } from 'react-i18next';
 
 type Props = {
   currentLocation: string;
@@ -96,7 +95,7 @@ const Header: React.FC<Props> = ({ currentLocation }) => {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'darkslategray' }}>
+    <AppBar position="static" sx={{ backgroundColor: 'DarkCyan' }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Typography

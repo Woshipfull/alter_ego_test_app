@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Accordion,
   AccordionDetails,
@@ -42,6 +42,7 @@ const NewsPage = () => {
   const startPoint = useSelector(getStartPoint);
 
   const addMoreBtnText =
+    // eslint-disable-next-line no-nested-ternary
     startPoint < 0
       ? t('newsPage.noMore')
       : status === 'loading'
@@ -55,7 +56,6 @@ const NewsPage = () => {
 
   const handleAddMore = () => {
     if (startPoint < 0) {
-      console.log('no more news');
       return;
     }
     dispatch(fetchNews(startPoint));
@@ -99,7 +99,7 @@ const NewsPage = () => {
         <AccordionDetails
           sx={{ display: 'flex', justifyContent: 'space-between', gap: 1 }}
         >
-          <Typography textAlign={'justify'}>{item.body}</Typography>
+          <Typography textAlign="justify">{item.body}</Typography>
           <Box sx={{ heigth: '100%' }}>
             <IconButton
               sx={{ p: '1px', color: 'red' }}
@@ -138,7 +138,7 @@ const NewsPage = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          backgroundImage: `url(${'./news.jpg'})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}${'/news.jpg'})`,
           borderRadius: 0,
         }}
       >

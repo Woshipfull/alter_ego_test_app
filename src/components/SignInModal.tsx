@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
 import * as React from 'react';
 import {
   Collapse,
@@ -19,7 +20,7 @@ import * as yup from 'yup';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-import { useDispatch  } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { logIn } from '../store/appStateSlice';
 
 type Props = {
@@ -44,7 +45,7 @@ const SignInModal: React.FC<Props> = ({ placement, handleCloseMenu }) => {
       username: '',
       password: '',
     },
-    validationSchema: validationSchema,
+    validationSchema,
     onSubmit: (values) => {
       const { username, password } = values;
       if (username === 'admin' && password === '12345') {

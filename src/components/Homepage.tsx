@@ -1,9 +1,7 @@
 import * as React from 'react';
 import { Container, Paper, Typography, Grid, Link, Box } from '@mui/material';
-
-import ProjectPost from './ProjectPost';
-
 import { useTranslation } from 'react-i18next';
+import ProjectPost from './ProjectPost';
 
 interface IProjects {
   [key: string]: {
@@ -15,17 +13,17 @@ interface IProjects {
 
 const projects: IProjects = {
   TicTacToe: {
-    imagePath: './TTT.png',
+    imagePath: '/TTT.png',
     siteLink: 'https://tic-tac-toe-topaz-gamma.vercel.app',
     repoLink: 'https://github.com/Woshipfull/Tic-Tac-Toe',
   },
   HelloChat: {
-    imagePath: './HCh.png',
+    imagePath: '/HCh.png',
     siteLink: 'https://hellochat-production.up.railway.app',
     repoLink: 'https://github.com/Woshipfull/HelloChat',
   },
   CatHub: {
-    imagePath: './CH.png',
+    imagePath: '/CH.png',
     siteLink: 'https://cat-hub-woshipfull.vercel.app',
     repoLink: 'https://github.com/Woshipfull/CatHub',
   },
@@ -99,7 +97,7 @@ const Homepage = () => {
           variant="h5"
           color="inherit"
           paragraph
-          textAlign={'center'}
+          textAlign="center"
           sx={{ mb: 4 }}
         >
           {t('homepage.moreProjectsTitle')}
@@ -112,7 +110,9 @@ const Homepage = () => {
             const imageAlt = t(`projects.${key}.imageAlt`);
             const texts = { title, description, imageAlt };
 
-            return <ProjectPost texts={texts} paths={projects[key]} key={key} />
+            return (
+              <ProjectPost texts={texts} paths={projects[key]} key={key} />
+            );
           })}
         </Grid>
       </Container>

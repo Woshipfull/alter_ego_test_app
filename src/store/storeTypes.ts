@@ -13,10 +13,10 @@ export interface INewsStore {
 }
 
 export interface IAppStateStore {
-  isAutorised: boolean,
+  isAutorised: boolean;
 }
 
 export interface IState {
-  news: INewsStore,
-  appState: IAppStateStore,
+  news: INewsStore;
+  appState: IAppStateStore;
 }

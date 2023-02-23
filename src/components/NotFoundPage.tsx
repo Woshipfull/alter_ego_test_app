@@ -1,4 +1,5 @@
-import { Box, Container, Grid, Link, Paper, Typography } from '@mui/material';
+import React from 'react';
+import { Box, Container, Grid, Paper, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
@@ -51,14 +52,14 @@ const NotFoundPage = () => {
               <Typography variant="h5" color="inherit" paragraph>
                 {t('notFoundPage.description')}
               </Typography>
-              <Link variant="subtitle1">
+              <Typography variant="subtitle1">
                 <RouterLink
                   to="/"
                   style={{ color: 'yellowgreen', textDecoration: 'none' }}
                 >
                   {t('notFoundPage.goHomeLink')}
                 </RouterLink>
-              </Link>
+              </Typography>
             </Box>
           </Grid>
         </Grid>

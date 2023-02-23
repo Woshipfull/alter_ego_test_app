@@ -82,7 +82,7 @@ const ProjectPost: React.FC<Props> = ({ texts, paths }) => {
             opacity: 0.15,
             objectFit: 'contain',
           }}
-          image={paths.imagePath}
+          image={process.env.PUBLIC_URL + paths.imagePath}
           alt={texts.imageAlt}
         />
       </Card>

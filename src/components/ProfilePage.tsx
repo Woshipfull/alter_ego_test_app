@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Box, Button, Container, Grid, Paper, Typography } from '@mui/material';
-
-import { useSelector, useDispatch } from 'react-redux';
-import { getIsAutorised, logOut } from '../store/appStateSlice';
 
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { getIsAutorised, logOut } from '../store/appStateSlice';
 
 const ProfilePage = () => {
   const dispatch = useDispatch();
@@ -37,7 +37,7 @@ const ProfilePage = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          backgroundImage: `url(${'./profile.jpg'})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}${'/profile.jpg'})`,
           borderRadius: 0,
         }}
       >
